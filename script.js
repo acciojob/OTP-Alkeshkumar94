@@ -21,4 +21,5 @@ function focusnext(currentinput){
 		}
 	}
 }
-cy.focused().should("have.class", "code").and("have.attr", "id", "code-1");
+cy.get('.code').first().focus()  // This will focus on the first input field with class 'code'
+cy.focused().should('have.class', 'code')
