@@ -21,3 +21,4 @@ function focusnext(currentinput){
 		}
 	}
 }
+cy.focused().should("have.class", "code").and("have.attr", "id", "code-1");
